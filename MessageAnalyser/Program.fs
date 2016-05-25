@@ -6,25 +6,16 @@ open ServiceShared
 
 [<EntryPoint>]
 let main argv = 
-    printfn "Hello World - Waiting for orders" 
+    printfn "Hello World - Waiting for jokes" 
     let busConfiguration = 
         new BusConfiguration()
             
     busConfiguration.EndpointName("ConsoleService.FS")
     busConfiguration.UseSerialization<JsonSerializer>() |> ignore
-    busConfiguration.EnableInstallers() |> ignore
+    busConfiguration.EnableInstallers() 
     busConfiguration.UsePersistence<InMemoryPersistence>() |> ignore
-            
-    
-    //using(Bus.Create(busConfiguration).Start())
-    //     (fun sub -> sub.Subscribe<PlaceOrder>())
 
-    use bus = Bus.Create(busConfiguration).Start()
-    
-    Console.WriteLine("Subscribed") |> ignore
-
-         
+    use bus = Bus.Create(busConfiguration).Start()         
     Console.ReadKey() |> ignore
-    
     0 
 
