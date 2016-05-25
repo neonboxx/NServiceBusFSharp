@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleService", "ConsoleService.csproj", "{DB801493-68E7-442A-81B8-329D581CD3AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleService", "ConsoleService\ConsoleService.csproj", "{DB801493-68E7-442A-81B8-329D581CD3AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceShared", "..\ServiceShared\ServiceShared.csproj", "{B24179F8-12A8-4F8D-A1D7-68D08C1C10CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceShared", "ServiceShared\ServiceShared.csproj", "{B24179F8-12A8-4F8D-A1D7-68D08C1C10CB}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MessageAnalyser", "..\MessageAnalyser\MessageAnalyser.fsproj", "{35329FD4-8D99-4A16-A616-26EFC232C080}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MessageAnalyser", "MessageAnalyser\MessageAnalyser.fsproj", "{35329FD4-8D99-4A16-A616-26EFC232C080}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
